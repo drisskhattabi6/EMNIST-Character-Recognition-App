@@ -1,4 +1,4 @@
-## 🧠 MNIST Character Recognition App
+## 🧠 EMNIST Character Recognition App
 
 Draw a handwritten character using your mouse, and let a deep learning model predict it in real-time!
 This app uses a PyTorch-trained neural network on the EMNIST dataset and a Tkinter interface for an intuitive user experience.
@@ -41,37 +41,20 @@ This app uses a PyTorch-trained neural network on the EMNIST dataset and a Tkint
 
 ---
 
-### 🧪 Requirements
-
-* Python 3.8+
-* [torch](https://pytorch.org/)
-* torchvision
-* Pillow
-* numpy
-* tkinter (comes with most Python installations)
-
----
-
 ### 📥 Installation
 
 1. **Clone the repo**:
 
    ```bash
-   git clone git@github.com:drisskhattabi6/MNIST-Character-Recognition-App.git
-   cd MNIST-Character-Recognition-App
+   git clone git@github.com:drisskhattabi6/EMNIST-Character-Recognition-App.git
+   cd EMNIST-Character-Recognition-App
    ```
 
 2. **Install dependencies**:
 
    ```bash
-   pip install torch torchvision pillow numpy
+   pip install -r requirements.txt
    ```
-
-3. **Make sure you have a trained EMNIST model** (or use a pre-trained one):
-
-   * Save it as `emnist_cnn.pth`
-   * Define a label map dictionary (`labels_map`) for mapping model output to characters.
-
 ---
 
 ### 🚀 Running the App
@@ -120,19 +103,15 @@ Classification Report:
 
 ```
 .
-├── app.py                  # Main app file
-├── emnist_cnn.pth               # Trained PyTorch model
+├── app.py                                # Main app file
+├── emnist_cnn.pth                        # Trained PyTorch model
 ├── Build the Tkinter Interface.ipynb     # Tkinter interface notebook
-├── Notebook - EMNIST.ipynb     # Model training notebook
-├── imgs/            # Screenshots for README
-└── README.md               # This file
+├── Notebook - EMNIST.ipynb               # Model training notebook
+├── imgs/                                 # Images folder
+└── README.md                             # This file 
 ```
 
 ### 👨‍💻 Author
 
 **Idriss**
 MSc AI & Data Science | Django Developer | [LinkedIn](https://www.linkedin.com/in/idriss-khattabi-b3a266235/)
-
----
-
-Let me know if you'd like help generating the screenshots or preparing a `train_emnist.py` script.
